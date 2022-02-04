@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login registre</title>
+    <script type="text/javascript">
+        let users = {pepe:{password: "123"} ,lola: "abc"};uiiu
+
+        function fer_login(){
+            console.log("Dins de la funcio");
+            let userEl = document.getElementById("usernameLogin");
+            let passEl = document.getElementById("password");
+
+            if (users[userEl.value]== passEl.value ) {
+                alert("Hola "+ userEl.value )
+            }
+            else{
+                alert("Usuario o ocntraseña incorrectos")
+            }
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <form>
+        <fieldset style="background-color: beige;"> <legend > <strong style="font-size: xx-large;">Login</strong> </legend>
+
+            <label >Username</label> 
+            <br>
+            <input id="usernameLogin" type="text" name="username">
+            <br>
+            <label >Password</label> 
+            <br>
+            <input id="password" type="password" name="password">
+            <br>
+
+            <input type="button" value="submit" onclick="fer_login()">
+        </fieldset>
+
+    </form>
+    <form style="background-color: beige;">
+        <fieldset style="background-color: bisque;"><legend><strong style="font-size: xx-large;">Register</strong> </legend>
+            <label >Username</label> 
+            <br>
+            <input id="usernameRegister" type="text" name="username">
+            <br>
+            <label >Email</label> 
+            <br>
+            <input id="email" type="email" name="Email">
+            <br>
+        <input type="button" value="submit">
+    </fieldset>
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
